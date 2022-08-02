@@ -1,0 +1,235 @@
+<html>
+    <head>
+        <title>Resume using grid</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            *{
+                padding: 0;
+                
+                box-sizing: border-box;
+                list-style: none;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            section{
+                display: block;
+            }
+            .main-content{
+                min-height: 1000px;
+                width: 90%;
+                margin: 20px auto;
+                display: grid;
+                grid-template-columns: 300px 700px;
+            }
+
+            .left-section{
+                grid-column: span 1;
+                background-color: bisque;
+
+            }
+
+            .right-section{
+                grid-column: span 1/span 2;
+                background-color: aquamarine;
+            }
+
+            .left-content{
+                padding: 1rem;
+            }
+
+            .profile-image img{
+                
+                border: 5px solid white;
+                border-radius: 30%;
+                display: block;
+                margin: auto;
+                width: 60%;
+            }
+            
+            .name{
+                font-size: 1.2rem;
+                font-weight: 700;
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: 0.02px;
+                padding: 0.8rem;
+            }
+
+            .designation{
+                font-size: 1rem;
+                text-align: center;
+                text-transform: uppercase;
+                padding-bottom: 0.5rem;
+            }
+
+            .description{
+                font-size: 0.75rem;
+                text-align: center;
+                padding: 1rem;
+            }
+
+            .fa {
+                padding: 20px;
+                font-size: 30px;
+                width: 30px;
+                text-align: center;
+                text-decoration: none;
+                margin: 5px 2px;
+                border-radius: 50%;
+            }
+
+            .fa:hover {
+                opacity: 0.7
+            }
+
+
+            .social-icons {
+                padding: 0;
+                list-style: none;
+                margin: 1em;
+            }
+  
+            li {
+                display: inline-block;
+                margin: 0.15em;
+                position: relative;
+                font-size: 1.2em;
+
+            }
+
+
+            .skills-title{
+                font-size: 0.75rem;
+                text-align: center;
+                text-transform: uppercase;
+                padding: 1rem 0.5rem;
+            }
+
+            .skill-name{
+                font-size: 0.65rem;
+                text-align: left;
+                padding-bottom: 0.5rem;
+            }
+
+            .progress-bar{
+                border: 1px solid white;
+                height: 4px;
+                background-color: white;
+            }
+            /* i {
+                color: #fff;
+                position: absolute;
+                top: 21px;
+                left: 21px;
+            } */
+
+            /* right-section */
+            .right-main-content{
+                padding: 2rem 3rem;
+            }
+
+
+            .right-title{
+                text-transform: uppercase;
+                font-size: 1.2rem;
+                font-weight: 700;
+                padding: 0.5;
+                letter-spacing: 1px;
+            }
+
+
+            @media screen and (max-width:673px)
+            {
+                .main-content{
+                    grid-template-columns:repeat(1,1fr);
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <main class="main-content">
+            <section class="left-section">
+                <div class="left-content">
+                    <div class="profile-details">
+                        <div class="profile-image"><img src="image.jpeg" alt="profile image"></div>
+                        <div class="name">Preeti Maurya</div>
+                        <div class="designation">Junior Software Engineer</div>
+                        <div class="description">Computer science Engineer</div>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="social-media">
+                                    <ul>
+                                        <li class="icon"><a href="https://github.com/preeti964"><i class="fa fa-github"></i></a></li>
+                                        <li class="icon"><a href="https://www.linkedin.com/in/preeti-maurya-03207a183/"><i class="fa fa-linkedin"></i></a></li>    
+                                    </ul>
+                                    </div>
+                                <div class="personal-details">
+                                    <ul>
+                                        <li class="icon"><i class="fa fa-phone">9984394706</i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <h2 class="skills-title">Skills</h2>
+                        <div class="skills-content">
+                            <div class="skills-item">
+                                <div class="skill-name">
+                                    <h3 class="skills">HTML</h3>
+                                </div>
+                                <div class="skills-progress">
+                                    <div class="progress-bar" style="width: 90%;"></div>
+                                </div>
+                                <div class="skill-name">
+                                    <h3 class="skills">CSS</h3>
+                                </div>
+                                <div class="skills-progress">
+                                    <div class="progress-bar" style="width: 50%;"></div>
+                                </div>
+                                <div class="skill-name">
+                                    <h3 class="skills">JAVA</h3>
+                                </div>
+                                <div class="skills-progress">
+                                    <div class="progress-bar" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="right-section">
+                <div class="right-main-content">
+                    <section class="about">
+                        <h2 class="right-title">About Me</h2>
+                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                             Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Volutpat odio facilisis mauris sit amet 
+                             massa. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Mi eget mauris pharetra et. Non tellus orci ac auctor augue.
+                              Elit at imperdiet dui accumsan sit. Ornare arcu dui vivamus arcu felis. Egestas integer eget aliquet nibh praesent.
+                             In hac habitasse platea dictumst quisque sagittis purus. Pulvinar elementum integer enim neque volutpat ac.
+                        </p>
+                    </section>
+                    <section class="education">
+                        <h2 class="right-title">Education</h2>
+                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                             Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Volutpat odio facilisis mauris sit amet 
+                             massa. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Mi eget mauris pharetra et. Non tellus orci ac auctor augue.
+                              Elit at imperdiet dui accumsan sit. Ornare arcu dui vivamus arcu felis. Egestas integer eget aliquet nibh praesent.
+                             In hac habitasse platea dictumst quisque sagittis purus. Pulvinar elementum integer enim neque volutpat ac.
+                        </p>
+                    </section>
+                    <section class="experience">
+                        <h2 class="right-title">Experience</h2>
+                        <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                             Nisl tincidunt eget nullam non. Quis hendrerit dolor magna eget est lorem ipsum dolor sit. Volutpat odio facilisis mauris sit amet 
+                             massa. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Mi eget mauris pharetra et. Non tellus orci ac auctor augue.
+                              Elit at imperdiet dui accumsan sit. Ornare arcu dui vivamus arcu felis. Egestas integer eget aliquet nibh praesent.
+                             In hac habitasse platea dictumst quisque sagittis purus. Pulvinar elementum integer enim neque volutpat ac.
+                            </p>
+                    </section>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
